@@ -1,0 +1,1000 @@
+    3  13/01/12 01:05:16 : wpa_supplicant 
+    4  13/01/12 01:05:27 : ifconfig
+    5  13/01/12 01:05:32 : iwconfig
+    6  13/01/12 01:05:46 : sudo ifconfig eth1 up
+    7  13/01/12 01:05:50 : ifconfig
+    8  13/01/12 01:05:58 : iwconfig
+    9  13/01/12 01:06:28 : ping google.com
+   10  13/01/12 01:06:33 : ifconfig
+   11  13/01/12 01:06:40 : ps aux | grep wpa
+   12  13/01/12 01:06:58 : sudo kill 727
+   13  13/01/12 01:07:00 : ps aux | grep wpa
+   14  13/01/12 01:07:06 : sudo wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -i eth1 -Dwext
+   15  13/01/12 11:41:36 : exit
+   16  13/01/12 12:15:37 : cd git/configfiles/
+   17  13/01/12 12:15:39 : git pull
+   18  13/01/12 12:15:49 : git diff
+   19  13/01/12 12:16:00 : git checkout mba/screenrc
+   20  13/01/12 12:16:02 : git diff
+   21  13/01/12 12:16:05 : git pull
+   22  13/01/12 12:16:15 : ll ~/.screenrc 
+   23  13/01/12 12:16:20 : exit
+   24  13/01/12 11:46:59 : sudo chgrp tty /dev/modem
+   25  13/01/12 11:47:06 : sudo chgrp tty /dev/tty1
+   26  13/01/12 11:47:12 : ll /dev/tty1
+   27  13/01/12 11:47:29 : sudo chmod 664 /dev/tty1
+   28  13/01/12 11:47:32 : ll /dev/tty1
+   29  13/01/12 11:47:37 : sudo chmod 664 /dev/tty*
+   30  13/01/12 11:47:44 : ll /dev/tty*
+   31  13/01/12 12:02:35 : ll
+   32  13/01/12 12:02:44 : cat *
+   33  13/01/12 12:03:16 : history | grep log
+   34  13/01/12 12:03:46 : grep ERROR /var/log/kannel/bearerbox.log
+   35  13/01/12 12:04:32 : grep ERROR /var/log/kannel/bearerbox.log | grep connect
+   36  13/01/12 12:05:05 : grep ERROR /var/log/kannel/bearerbox.log | grep -v "open failed" | grep -v "Permission"
+   37  13/01/12 12:05:14 : head /var/log/kannel/bearerbox.log
+   38  13/01/12 12:05:26 : grep ERROR /var/log/kannel/bearerbox.log | grep connect
+   39  13/01/12 12:05:34 : grep ERROR /var/log/kannel/bearerbox.log 
+   40  13/01/12 12:05:46 : history | tail -100
+   41  13/01/12 12:05:54 : grep ERROR /var/log/kannel/bearerbox.log 
+   42  13/01/12 12:06:34 : ls
+   43  13/01/12 12:08:59 : grep type /var/log/kannel/bearerbox.log
+   44  13/01/12 12:10:55 : tail -200 /var/log/kannel/bearerbox.log
+   45  13/01/12 12:11:59 : grep ERROR /var/log/kannel/bearerbox.log 
+   46  13/01/12 12:12:19 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+   47  13/01/12 12:16:23 : exit
+   48  13/01/12 11:29:03 : ls
+   49  13/01/12 11:29:05 : ifconfig
+   50  13/01/12 11:29:09 : dig google.com
+   51  13/01/12 11:29:11 : ping 192.168.0.1
+   52  13/01/12 11:41:49 : ps aux | grep bear
+   53  13/01/12 11:43:42 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf 
+   54  13/01/12 11:44:01 : ll /dev/tty1
+   55  13/01/12 11:44:16 : vim -R /etc/passwd
+   56  13/01/12 11:44:44 : ls /dev/tty1
+   57  13/01/12 11:44:48 : ll /dev/tty1
+   58  13/01/12 11:44:58 : chmod 664 /dev/tty
+   59  13/01/12 11:45:00 : sudo chmod 664 /dev/tty
+   60  13/01/12 11:45:02 : ll /dev/tty1
+   61  13/01/12 11:45:14 : sudo useradd -G tty kannel
+   62  13/01/12 11:45:34 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf 
+   63  13/01/12 11:50:19 : ls /usr/local/bin/
+   64  13/01/12 11:50:27 : sudo vim /usr/local/bin/highlight
+   65  13/01/12 11:50:48 : /usr/local/bin/highlight ozaki
+   66  13/01/12 11:51:00 : chmod 777 /usr/local/bin/highlight
+   67  13/01/12 11:51:03 : sudo chmod 777 /usr/local/bin/highlight
+   68  13/01/12 11:51:04 : /usr/local/bin/highlight ozaki
+   69  13/01/12 11:51:12 : echo aaa
+   70  13/01/12 11:51:19 : echo aaa | highlight oz
+   71  13/01/12 11:51:34 : echo aaa | highlight aa
+   72  13/01/12 11:51:51 : sudo vim /usr/local/bin/highlight
+   73  13/01/12 11:53:17 : echo aaa | highlight aa
+   74  13/01/12 11:53:32 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf | highlight DEBUG
+   75  13/01/12 11:54:06 : cat /etc/kannel/kannel.conf
+   76  13/01/12 11:54:11 : cat /etc/kannel/kannel.conf | highlight group
+   77  13/01/12 11:54:23 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf | highlight
+   78  13/01/12 11:54:32 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf | highlight 2013
+   79  13/01/12 11:54:48 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf | grep --color 2013
+   80  13/01/12 11:54:54 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+   81  13/01/12 12:16:24 : exit
+   82  13/01/12 12:18:27 : cat /var/log/kannel/bearerbox.log
+   83  13/01/12 12:18:45 : exit
+   84  13/01/12 02:05:22 : ls
+   85  13/01/12 02:05:45 : vim -O .bashrc git/configfiles/mba/bashrc 
+   86  13/01/12 02:06:58 : source ~/.bashrc 
+   87  13/01/12 02:07:07 : vim -O .bashrc git/configfiles/mba/bashrc 
+   88  13/01/12 02:08:16 : source ~/.bashrc 
+   89  13/01/12 02:08:20 : vim -O .bashrc git/configfiles/mba/bashrc 
+   90  13/01/12 02:08:42 : source ~/.bashrc 
+   91  13/01/12 02:08:46 : vim -O .bashrc git/configfiles/mba/bashrc 
+   92  13/01/12 02:09:01 : screen
+   93  13/01/12 12:22:20 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+   94  13/01/12 11:41:22 : screen -ls
+   95  13/01/12 11:41:28 : screen -DRR 1489.tty1.ubuntu
+   96  13/01/12 12:16:30 : screen -ls
+   97  13/01/12 12:16:39 : screen -S from_MBA
+   98  13/01/13 15:19:33 : exit
+   99  13/01/13 16:01:42 : ls
+  100  13/01/13 16:01:52 : exit
+  101  13/01/13 16:07:41 : ls
+  102  13/01/13 16:07:42 : ll
+  103  13/01/13 16:07:44 : cat *
+  104  13/01/13 16:12:47 : exit
+  105  13/01/13 16:03:24 : screen -ls
+  106  13/01/13 16:12:56 : exit
+  107  13/01/12 11:38:51 : ifconfig
+  108  13/01/12 11:39:01 : screen
+  109  13/01/12 11:39:15 : screen -S ubuntu_self
+  110  13/01/12 11:39:18 : screen -ls
+  111  13/01/12 11:39:35 : iwconfig
+  112  13/01/12 11:39:40 : sudo ifup eth1
+  113  13/01/12 11:39:50 : fconfig
+  114  13/01/12 11:39:53 : ifconfig 
+  115  13/01/12 11:40:00 : ping 192.168.0.1
+  116  13/01/12 11:40:05 : dig google.com
+  117  13/01/12 14:18:51 : ifconfig
+  118  13/01/13 16:14:43 : exit
+  119  13/01/12 13:03:40 : lsusb
+  120  13/01/12 13:08:36 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+  121  13/01/12 13:17:15 : grep -r smart /var/log
+  122  13/01/12 13:17:18 : sudo grep -r smart /var/log
+  123  13/01/12 13:18:01 : sudo grep -r smart /etc/kannel/
+  124  13/01/12 13:19:24 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+  125  13/01/12 13:26:11 : grep modems.conf /var/log/kannel/
+  126  13/01/12 13:26:14 : grep -r modems.conf /var/log/kannel/
+  127  13/01/12 13:26:16 : sudo grep -r modems.conf /var/log/kannel/
+  128  13/01/12 13:28:15 : ll /etc/kannel/
+  129  13/01/12 13:28:28 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+  130  13/01/12 15:08:21 : ll /dev/usbmon
+  131  13/01/12 15:08:23 : ll /dev/usbmon*
+  132  13/01/12 15:08:32 : ll -t /dev
+  133  13/01/12 15:09:05 : ll -t /dev | head -10
+  134  13/01/12 15:09:10 : ll -t /dev | head -20
+  135  13/01/12 15:57:10 : more /var/log/kannel/bearerbox.log
+  136  13/01/12 16:10:33 : tail -f /var/log/syslog
+  137  13/01/12 16:17:32 : ls /dev/ttyUSB0 
+  138  13/01/12 16:17:36 : ll -t /dev/ttyUSB0 
+  139  13/01/12 16:17:38 : ll -t /dev/ttyUSB0*
+  140  13/01/12 16:17:40 : ll -t /dev/ttyUSB*
+  141  13/01/12 16:22:04 : tail -f /var/log/kannel/bearerbox.log  | grep ERROR
+  142  13/01/12 16:56:25 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=test from kannel"
+  143  13/01/12 16:56:32 : sudo apt-get install lynx-cur
+  144  13/01/12 16:59:17 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=test from kannel"
+  145  13/01/12 17:01:48 : ll -lt /var/log/kannel/
+  146  13/01/12 17:02:05 : tail /var/log/kannel/bearerbox.log
+  147  13/01/12 17:02:18 : tail -30 /var/log/kannel/bearerbox.log
+  148  13/01/12 17:04:18 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=test from kannel"
+  149  13/01/13 16:15:16 : exit
+  150  13/01/12 12:18:02 : ll
+  151  13/01/12 12:18:04 : cat *
+  152  13/01/12 12:20:50 : sudo vim /etc/kannel/kannel.conf 
+  153  13/01/12 13:18:41 : mv /usr/local/include/kannel/modems.conf /usr/local/include/kannel/modems.conf.bak
+  154  13/01/12 13:18:43 : sudo mv /usr/local/include/kannel/modems.conf /usr/local/include/kannel/modems.conf.bak
+  155  13/01/12 13:18:52 : touch /usr/local/include/kannel/modems.conf
+  156  13/01/12 13:18:55 : sudo touch /usr/local/include/kannel/modems.conf
+  157  13/01/12 13:18:56 : ls
+  158  13/01/12 13:21:58 : sudo vim -O /etc/kannel/kannel.conf /usr/local/include/kannel/modems.conf
+  159  13/01/12 13:26:48 : cp /usr/local/include/kannel/modems.conf.bak /etc/kannel/modems.conf
+  160  13/01/12 13:26:51 : sudo cp /usr/local/include/kannel/modems.conf.bak /etc/kannel/modems.conf
+  161  13/01/12 13:26:55 : ll /etc/kannel/
+  162  13/01/12 13:27:17 : sudo vim -O /etc/kannel/*
+  163  13/01/13 16:15:20 : exit
+  164  13/01/12 12:16:44 : ll
+  165  13/01/12 12:16:46 : cat *
+  166  13/01/12 12:17:06 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  167  13/01/12 12:17:36 : cat /var/log/kannel/bearerbox.log
+  168  13/01/12 12:17:52 : ll
+  169  13/01/12 12:17:54 : cat *
+  170  13/01/12 12:22:08 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  171  13/01/12 13:25:04 : /etc/init.d/kannel stop
+  172  13/01/12 13:25:08 : sudo /etc/init.d/kannel stop
+  173  13/01/12 13:25:14 : ps aux | grep kannel
+  174  13/01/12 13:27:58 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  175  13/01/12 13:31:10 : ll /dev/tty1
+  176  13/01/12 13:31:14 : ll /dev/tty*
+  177  13/01/12 13:31:35 : ll -t /dev/tty*
+  178  13/01/12 13:32:57 : wvdial
+  179  13/01/12 13:33:01 : sudo wvdial
+  180  13/01/12 13:33:21 : history | grep wvdial
+  181  13/01/12 13:33:31 : sudo wvdialconf 
+  182  13/01/12 13:33:40 : sudo vim /etc/wvdial.conf
+  183  13/01/12 13:33:52 : history | grep wvdial
+  184  13/01/12 13:34:09 : sudo wvdialconf 
+  185  13/01/12 13:34:26 : sudo vim /etc/wvdial.conf
+  186  13/01/12 13:34:35 : ll /dev/cdrom1
+  187  13/01/12 13:34:39 : sudo wvdialconf 
+  188  13/01/12 13:34:43 : wvdial
+  189  13/01/12 13:34:45 : sudo wvdial
+  190  13/01/12 13:35:07 : ll -t /dev/*
+  191  13/01/12 13:36:33 : ll /dev/usbmon*
+  192  13/01/12 13:36:42 : sudo cat /dev/usbmon0
+  193  13/01/12 13:36:52 : sudo cat /dev/usbmon1
+  194  13/01/12 13:37:02 : sudo less /dev/usbmon1
+  195  13/01/12 13:37:07 : sudo more /dev/usbmon1
+  196  13/01/12 14:37:00 : ll /dev/usbmon*
+  197  13/01/12 14:37:17 : sudo chgrp tty /dev/usbmon*
+  198  13/01/12 14:37:21 : ll /dev/usbmon*
+  199  13/01/12 14:37:30 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  200  13/01/12 14:37:45 : ll /dev/usbmon*
+  201  13/01/12 14:38:03 : sudo chmod 664 /dev/usbmon*
+  202  13/01/12 14:38:06 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  203  13/01/12 14:38:34 : ll /dev/usbmon*
+  204  13/01/12 14:38:39 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  205  13/01/12 14:38:57 : ll /dev/tty*
+  206  13/01/12 14:39:10 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  207  13/01/12 14:51:38 : sudo wvdial
+  208  13/01/12 14:51:45 : sudo vim /etc/wvdial.conf
+  209  13/01/12 14:51:54 : sudo wvdial
+  210  13/01/12 14:53:35 : sudo wvdialconf 
+  211  13/01/12 14:56:02 : lsb_release -irdc
+  212  13/01/12 14:56:08 : sudo lsb_release -irdc
+  213  13/01/12 14:56:56 : which wvdial
+  214  13/01/12 14:58:03 : sudo wvdialconf 
+  215  13/01/12 14:59:38 : ll -t /dev/
+  216  13/01/12 15:00:06 : ll -t /dev/usbmon*
+  217  13/01/12 15:00:23 : sudo wvdialconf 
+  218  13/01/12 15:00:44 : vim -R /etc/wvdial.conf.bak 
+  219  13/01/12 15:01:04 : mv /etc/wvdial.conf.bak /etc/wvdial.conf.bak2
+  220  13/01/12 15:01:06 : sudo mv /etc/wvdial.conf.bak /etc/wvdial.conf.bak2
+  221  13/01/12 15:01:40 : sudo mv /etc/wvdial.conf /etc/wvdial.conf.bak
+  222  13/01/12 15:01:55 : sudo mv /etc/wvdial.conf.bak2 /etc/wvdial.conf
+  223  13/01/12 15:01:59 : vim -R /etc/wvdial.conf
+  224  13/01/12 15:02:11 : sudo wvdialconf 
+  225  13/01/12 15:05:49 : lsusb 
+  226  13/01/12 15:05:58 : lsusb -t
+  227  13/01/12 15:06:32 : sudo wvdialconf 
+  228  13/01/12 15:06:36 : sudo wvdia
+  229  13/01/12 15:06:38 : sudo wvdial
+  230  13/01/12 15:06:47 : vim -R /etc/wvdial.conf
+  231  13/01/12 15:07:15 : mv /etc/wvdial.conf /etc/wvdial.conf.default
+  232  13/01/12 15:07:17 : sudo mv /etc/wvdial.conf /etc/wvdial.conf.default
+  233  13/01/12 15:07:25 : sudo mv /etc/wvdial.conf.bak /etc/wvdial.conf
+  234  13/01/12 15:07:42 : sudo wvdial
+  235  13/01/12 15:08:02 : sudo vim /etc/wvdial.conf
+  236  13/01/12 15:09:59 : sudo wvdial
+  237  13/01/12 15:10:18 : wvdialconf 
+  238  13/01/12 15:10:21 : sudo wvdialconf 
+  239  13/01/12 15:10:35 : sudo vim /etc/wvdial.conf
+  240  13/01/12 15:10:52 : sudo wvdialconf 
+  241  13/01/12 15:10:55 : sudo wvdial
+  242  13/01/12 15:11:03 : sudo vim /etc/wvdial.conf
+  243  13/01/12 15:11:21 : sudo wvdial
+  244  13/01/12 15:11:26 : sudo wvdialconf 
+  245  13/01/12 15:12:45 : lsusb 
+  246  13/01/12 15:13:41 : more /proc/bus/input/devices 
+  247  13/01/12 15:13:50 : grep ZTE /proc/bus/input/devices 
+  248  13/01/12 15:13:55 : grep -i ZTE /proc/bus/input/devices 
+  249  13/01/12 15:13:59 : grep -i usb /proc/bus/input/devices 
+  250  13/01/12 15:14:07 : grep -i usb /proc/bus/pci/devices 
+  251  13/01/12 15:16:56 : sudo apt-cache search usb
+  252  13/01/12 15:17:01 : sudo apt-cache search usb | grep usb
+  253  13/01/12 15:21:31 : ll /dev/ttyS0
+  254  13/01/12 15:22:02 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  255  13/01/12 15:22:17 : ll /dev/ttyS0
+  256  13/01/12 15:22:34 : sudo chgrp tty /dev/ttyS0
+  257  13/01/12 15:22:46 : sudo chmod 664 /dev/ttyS0
+  258  13/01/12 15:22:49 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  259  13/01/12 15:24:28 : sudo ll /dev/*
+  260  13/01/12 15:24:32 : sudo ls -l /dev/*
+  261  13/01/12 15:53:56 : sudo apt-get install usb-modeswitch
+  262  13/01/12 15:55:27 : usb-devices 
+  263  13/01/12 15:56:03 : ls /dev/usbmon*
+  264  13/01/12 15:56:06 : ll /dev/usbmon*
+  265  13/01/12 16:06:56 : sudo wvdialconf 
+  266  13/01/12 16:07:00 : sudo wvdial
+  267  13/01/12 16:07:11 : sudo vim /etc/wvdial.conf
+  268  13/01/12 16:07:18 : sudo wvdial
+  269  13/01/12 16:13:38 : lsmod 
+  270  13/01/12 16:13:57 : lsmod | grep -i usb
+  271  13/01/12 16:14:11 : lsmod > before_lsmod.txt
+  272  13/01/12 16:14:49 : lsmod > unplugged_lsmod.txt
+  273  13/01/12 16:14:59 : mv before_lsmod.txt plugged_lsmod.txt
+  274  13/01/12 16:15:04 : dif unplugged_lsmod.txt plugged_lsmod.txt 
+  275  13/01/12 16:15:07 : diff unplugged_lsmod.txt plugged_lsmod.txt 
+  276  13/01/12 16:15:23 : lsmod
+  277  13/01/12 16:18:15 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  278  13/01/12 16:18:25 : ll /dev/ttyUSB0
+  279  13/01/12 16:18:39 : sudo useradd -G dialout kannel
+  280  13/01/12 16:19:00 : sudo chmod 664 /dev/ttyUSB*
+  281  13/01/12 16:19:03 : ll /dev/ttyUSB0
+  282  13/01/12 16:19:25 : more /etc/group | grep kannel
+  283  13/01/12 16:19:30 : more /etc/group | grep dialout
+  284  13/01/12 16:19:39 : sudo useradd -G dialout kannel
+  285  13/01/12 16:19:43 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  286  13/01/12 16:20:33 : more /etc/group | grep cdrom
+  287  13/01/12 16:21:18 : sudo chgrp tty /dev/ttyUSB*
+  288  13/01/12 16:21:21 : ll /dev/ttyUSB0
+  289  13/01/12 16:21:31 : sudo chmod 664 /dev/ttyUSB*
+  290  13/01/12 16:21:36 : ll /dev/ttyUSB*
+  291  13/01/12 16:21:40 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  292  13/01/12 16:27:20 : wvdial
+  293  13/01/12 16:27:27 : sudo wvdialconf 
+  294  13/01/12 16:27:48 : vim -R /etc/wvdial.conf.
+  295  13/01/12 16:28:13 : sudo wvdialconf 
+  296  13/01/12 16:32:32 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  297  13/01/12 16:33:51 : sudo wvdialconf 
+  298  13/01/12 16:34:04 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  299  13/01/12 16:34:13 : ll /dev/ttyUSB*
+  300  13/01/12 16:34:21 : sudo useradd -G dialout kannel
+  301  13/01/12 16:34:45 : sudo usermod -G dialout kannel
+  302  13/01/12 16:34:53 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  303  13/01/13 16:15:59 : exit
+  304  13/01/12 13:29:34 : tail -f /var/log/* | grep tty
+  305  13/01/12 13:29:41 : sudo tail -f /var/log/* | grep tty
+  306  13/01/12 16:46:42 : ls
+  307  13/01/12 16:46:59 : sudo -u kannel smsbox -v 0 /etc/kannel/kannel.conf
+  308  13/01/13 16:16:02 : exit
+  309  13/01/13 16:14:26 : screen -ls
+  310  13/01/13 16:14:31 : screen -DRR 6405.ubuntu_self
+  311  13/01/13 16:14:47 : screen -ls
+  312  13/01/13 16:14:56 : screen -DRR 7652.from_MBA
+  313  13/01/13 16:19:25 : exit
+  314  13/01/13 16:20:00 : cat *
+  315  13/01/13 16:31:48 : exit
+  316  13/01/13 16:35:07 : vim .tmux.conf 
+  317  13/01/13 16:43:14 : exit
+  318  13/01/13 16:24:49 : vim .tmux.conf 
+  319  13/01/13 16:28:17 : cd ~/.vim
+  320  13/01/13 16:28:25 : mkdir .vim
+  321  13/01/13 16:28:32 : cd ~/.vim
+  322  13/01/13 16:28:33 : mkdir bundle
+  323  13/01/13 16:28:37 : cd bundle
+  324  13/01/13 16:28:40 : git clone http://bit.ly/ygNsHS
+  325  13/01/13 16:29:51 : git clone https://github.com/gmarik/vundle.git
+  326  13/01/13 16:30:33 : vim /home/yoyo/.bash
+  327  13/01/13 16:30:38 : vim /home/yoyo/.bashrc
+  328  13/01/13 16:43:16 : exit
+  329  13/01/13 17:15:14 : ll /var/log/kannel/*
+  330  13/01/13 17:15:20 : ll -t /var/log/kannel/*
+  331  13/01/13 17:15:26 : exit
+  332  13/01/13 17:19:36 : history
+  333  13/01/13 17:20:02 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluse&password=kanneluser&to=+639217680637&text=test from kannel"
+  334  13/01/13 17:20:16 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  335  13/01/13 17:23:48 : ps aux | grep apache
+  336  13/01/13 17:24:22 : sudo find / -name "apache*" -type d
+  337  13/01/13 17:25:02 : vim -R /etc/apache2/apache2.conf 
+  338  13/01/13 17:25:24 : ll /var/log/apache2/*
+  339  13/01/13 17:25:28 : ll -t /var/log/apache2/*
+  340  13/01/13 17:25:45 : more /var/log/apache2/access.log
+  341  13/01/13 17:25:52 : more /var/log/apache2/access.log.1 
+  342  13/01/13 17:26:19 : sudo find / -name "apache*" -type d
+  343  13/01/13 17:26:50 : ll /etc/apache2/apache2.conf 
+  344  13/01/13 17:26:55 : vim -R /etc/apache2/apache2.conf 
+  345  13/01/13 17:27:24 : vim /etc/apache2/conf.d/security 
+  346  13/01/13 17:27:32 : vim -O /etc/apache2/conf.d/*
+  347  13/01/13 17:28:06 : top
+  348  13/01/13 17:28:34 : exit
+  349  13/01/13 17:30:42 : sudo ls /var/log/kannel/
+  350  13/01/13 17:34:38 : exit
+  351  13/01/13 23:22:01 : sudo find / -name "test1.txt" -type d
+  352  13/01/13 23:22:06 : sudo find / -name "test1.txt"
+  353  13/01/13 23:22:48 : exit
+  354  13/01/13 23:15:36 : sudo find / -name "apache*" -type d
+  355  13/01/13 23:15:49 : ll -t /var/log/apache2/
+  356  13/01/13 23:15:57 : more /var/log/apache2/error.log
+  357  13/01/13 23:16:14 : ll /usr/lib/cgi-bin/test.pl
+  358  13/01/13 23:16:22 : chmod 777 /usr/lib/cgi-bin/test.pl
+  359  13/01/13 23:16:30 : more /var/log/apache2/error.log
+  360  13/01/13 23:23:47 : exit
+  361  13/01/13 23:33:02 : ls
+  362  13/01/13 23:33:07 : ll smsgateway-sun.cgi 
+  363  13/01/13 23:33:37 : mkdir /usr/lib/cgi-bin/kannel
+  364  13/01/13 23:34:03 : cp smsgateway-sun.cgi /usr/lib/cgi-bin/kannel/reply-sun.pl
+  365  13/01/13 23:34:15 : chmod 777 /usr/lib/cgi-bin/kannel/reply-sun.pl
+  366  13/01/13 23:34:18 : exit
+  367  13/01/13 23:15:02 : lynx 
+  368  13/01/13 23:17:14 : lynx -dump "http://127.0.0.1/cgi-bin/hello.ph?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  369  13/01/13 23:17:19 : lynx -dump "http://127.0.0.1/cgi-bin/hello.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  370  13/01/13 23:17:35 : lynx -dump "http://127.0.0.1/cgi-bin/test.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  371  13/01/13 23:21:19 : lynx -dump "http://127.0.0.1/cgi-bin/hello.ph?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  372  13/01/13 23:21:24 : lynx -dump "http://127.0.0.1/cgi-bin/test.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  373  13/01/13 23:39:20 : perl -e 'print "@INC;"
+  374  13/01/13 23:39:24 : perl -e 'print "@INC;"'
+  375  13/01/13 23:39:57 : perldoc -M LWP::UserAgent
+  376  13/01/13 23:40:10 : cpan install LWP::UserAgent
+  377  13/01/13 23:43:29 : exit
+  378  13/01/13 23:43:49 : cpan install LWP::UserAgent
+  379  13/01/14 00:01:06 : sudo cpan install LWP::UserAgent
+  380  13/01/14 00:53:44 : exit
+  381  13/01/14 00:15:57 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  382  13/01/14 00:16:09 : ll /usr/lib/cgi-bin/kannel/
+  383  13/01/14 00:16:18 : more /var/log/apache2/error.log
+  384  13/01/14 00:17:19 : ll /usr/lib/cgi-bin/
+  385  13/01/14 00:17:30 : lynx -dump "http://127.0.0.1/cgi-bin/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  386  13/01/14 00:17:33 : more /var/log/apache2/error.log
+  387  13/01/14 00:17:50 : tail -f /var/log/apache2/error.log
+  388  13/01/14 01:08:48 : exit
+  389  13/01/14 00:18:04 : lynx -dump "http://127.0.0.1/cgi-bin/test.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  390  13/01/14 00:18:28 : lynx -dump "http://127.0.0.1/cgi-bin/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  391  13/01/14 00:22:58 : ls /usr/lib/cgi-bin/reply-sun.pl'
+  392  13/01/14 00:23:00 : ls /usr/lib/cgi-bin/reply-sun.pl
+  393  13/01/14 00:23:26 : ll /usr/lib/cgi-bin/reply-sun.pl
+  394  13/01/14 00:23:34 : lynx -dump "http://127.0.0.1/cgi-bin/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  395  13/01/14 00:25:22 : lynx -dump "http://127.0.0.1/cgi-bin/test.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  396  13/01/14 00:25:43 : which perl
+  397  13/01/14 00:25:52 : ls /usr/bin/perl
+  398  13/01/14 00:27:05 : lynx -dump "http://127.0.0.1/cgi-bin/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  399  13/01/14 00:37:34 : lynx -dump "http://127.0.0.1/cgi-bin/reply-sun2.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  400  13/01/14 00:40:24 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun2.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  401  13/01/14 00:41:13 : ll
+  402  13/01/14 00:42:20 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=testkannel"
+  403  13/01/14 00:45:18 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?username=kanneluser&password=kanneluser&to=+639217680637&text=langrich"
+  404  13/01/14 00:46:18 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=testkannel"
+  405  13/01/14 00:49:34 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?username=kanneluser&password=kanneluser&Sender=+639217680637&text=langrich"
+  406  13/01/14 00:51:33 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?username=kanneluser&password=kanneluser&Sender=09217680637&text=langrich"
+  407  13/01/14 00:54:21 : lynx -dump "http://127.0.0.1/cgi-bin/kannel/reply-sun.pl?Sender=09217680637&text=langrich"
+  408  13/01/14 01:05:02 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09334146548&text=10 09334146548"
+  409  13/01/14 01:08:53 : exit
+  410  13/01/14 00:42:51 : sudo find / -name "test2_log.txt"
+  411  13/01/14 01:08:55 : exit
+  412  13/01/14 01:41:21 : sudo shutdown -h now
+  413  13/01/13 16:47:50 : vim .tmux.conf 
+  414  13/01/13 16:50:52 : cd git/configfiles/
+  415  13/01/13 16:50:52 : ls
+  416  13/01/13 16:50:55 : git diff
+  417  13/01/13 16:51:09 : vim .tmux.conf 
+  418  13/01/13 16:51:12 : cd
+  419  13/01/13 16:51:15 : vim .tmux.conf 
+  420  13/01/13 16:52:11 : cd git/configfiles/
+  421  13/01/13 16:52:12 : ls
+  422  13/01/13 16:52:15 : git diff
+  423  13/01/13 16:52:21 : git st
+  424  13/01/13 16:52:28 : git add mba/tmux.conf
+  425  13/01/13 16:52:29 : ls
+  426  13/01/13 16:52:34 : git commit -v
+  427  13/01/13 16:52:54 : git logs
+  428  13/01/13 16:53:01 : git push origin master 
+  429  13/01/13 16:53:22 : git pull
+  430  13/01/13 16:53:33 : git push origin master
+  431  13/01/13 16:53:42 : sudo git push origin master
+  432  13/01/13 16:57:40 : cd
+  433  13/01/13 16:57:47 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  434  13/01/13 16:57:59 : sudo -u kannel smsbox -v 0 /etc/kannel/kannel.conf
+  435  13/01/13 16:58:22 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=test from kannel"
+  436  13/01/13 17:14:05 : vim -0 /etc/kannel/kannel.conf /etc/kannel/modems.conf 
+  437  13/01/13 17:14:10 : vim -O /etc/kannel/kannel.conf /etc/kannel/modems.conf 
+  438  13/01/13 18:49:29 : sudo vim -O /etc/kannel/kannel.conf /etc/kannel/modems.conf 
+  439  13/01/13 23:08:27 : vim .tmux.conf 
+  440  13/01/13 17:34:31 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09192260053&text=testkannel"
+  441  13/01/13 17:36:04 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=testkannel"
+  442  13/01/13 17:37:19 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=639217680637&text=testkannel"
+  443  13/01/13 17:38:21 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=start from 09"
+  444  13/01/13 17:38:28 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=639217680637&text=start from 63"
+  445  13/01/13 17:39:51 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09232224942&text=Kannel from ozaki"
+  446  13/01/13 17:40:07 : history 
+  447  13/01/13 22:37:35 : ping http://localhost/
+  448  13/01/13 22:40:46 : ping http://localhost
+  449  13/01/13 22:40:49 : ping http://localhost/
+  450  13/01/13 22:40:57 : ping http://localhost:80/
+  451  13/01/13 22:42:57 : ping http://127.0.1.1/
+  452  13/01/13 22:43:07 : ping 127.0.1.1
+  453  13/01/13 22:43:12 : ping localhost
+  454  13/01/13 22:43:28 : wget http://127.0.1.1/
+  455  13/01/13 22:43:32 : more index.html 
+  456  13/01/13 22:43:36 : rm index.html 
+  457  13/01/13 22:43:43 : wget http://localhost/
+  458  13/01/13 22:43:46 : more index.html 
+  459  13/01/13 22:43:48 : rm index.html 
+  460  13/01/13 22:43:49 : ls
+  461  13/01/13 22:44:18 : vim /etc/apache2/apache2.conf 
+  462  13/01/13 22:44:55 : grep -r index /etc/apache2/
+  463  13/01/13 22:45:45 : grep -nr "This is the default web page" /
+  464  13/01/13 22:45:49 : sudo grep -nr "This is the default web page" /
+  465  13/01/13 22:47:33 : grep -r DocumentRoot /etc/apache2/
+  466  13/01/13 22:47:44 : more /var/www/index.html 
+  467  13/01/13 22:48:05 : vim /var/www/hello.html
+  468  13/01/13 22:48:21 : sudo vim /var/www/hello.html
+  469  13/01/13 22:48:38 : wget http://localhost/hello.html
+  470  13/01/13 22:48:41 : more hello.html 
+  471  13/01/13 22:49:00 : rm hello.html 
+  472  13/01/13 22:54:11 : grep -r DocumentRoot /etc/apache2/
+  473  13/01/13 22:54:26 : ls /etc/apache2/
+  474  13/01/13 22:54:46 : grep -r "sites-" /etc/apache2/
+  475  13/01/13 22:54:58 : sudo vim /etc/apache2/apache2.conf
+  476  13/01/13 22:41:19 : which apachectl 
+  477  13/01/13 22:41:46 : sudo find / -name "apache*" -type d
+  478  13/01/13 22:42:02 : sudo service apache2 start
+  479  13/01/13 22:42:11 : ps axu | grep apache
+  480  13/01/13 22:42:20 : ps axu | grep apache
+  481  13/01/13 22:42:34 : sudo service apache2 restart 
+  482  13/01/13 22:55:48 : grep -nr cgi /etc/apache2/
+  483  13/01/13 22:56:40 : grep -nr sites-avai /etc/apache2/
+  484  13/01/13 23:07:19 : grep -nri execcgi /etc/apache2/
+  485  13/01/13 23:09:18 : vim /usr/lib/cgi-bin/test.pl
+  486  13/01/13 23:10:45 : ls /usr/lib/cgi-bin/
+  487  13/01/13 23:10:52 : ll /usr/lib/cgi-bin*
+  488  13/01/13 23:10:56 : ll /usr/lib/cgi-*
+  489  13/01/13 23:10:59 : ll /usr/lib/c*
+  490  13/01/13 23:11:05 : ll /usr/lib/
+  491  13/01/13 23:11:52 : sudo chmod 771 /usr/lib/cgi-bin
+  492  13/01/13 23:11:55 : ll /usr/lib/
+  493  13/01/13 23:12:07 : vim /usr/lib/cgi-bin/test.pl
+  494  13/01/13 23:12:53 : sudo useradd -G root yoyo
+  495  13/01/13 23:13:02 : vim /usr/lib/cgi-bin/test.pl
+  496  13/01/13 23:13:17 : ll /usr/lib/
+  497  13/01/13 23:13:42 : sudo chmod 777 /usr/lib/cgi-bin
+  498  13/01/13 23:13:45 : vim /usr/lib/cgi-bin/test.pl
+  499  13/01/13 23:45:57 : ll /usr/lib/cgi-bin/
+  500  13/01/13 23:46:25 : ll /usr/lib/cgi-bin/kannel/
+  501  13/01/13 23:46:41 : cp /usr/lib/cgi-bin/kannel/reply-sun.pl /usr/lib/cgi-bin/kannel/reply-sun_copy.pl
+  502  13/01/13 23:46:50 : vim /usr/lib/cgi-bin/kannel/reply-sun.pl
+  503  13/01/14 00:17:06 : cp /usr/lib/cgi-bin/kannel/reply-sun.pl /usr/lib/cgi-bin/
+  504  13/01/14 00:17:11 : vim /usr/lib/cgi-bin/reply-sun.pl 
+  505  13/01/14 00:36:06 : sudo apt-get install qkc
+  506  13/01/14 00:36:41 : sudo apt-get install nkf
+  507  13/01/14 00:37:25 : nkf -Lu /usr/lib/cgi-bin/kannel/reply-sun.pl > /usr/lib/cgi-bin/kannel/reply-sun2.pl
+  508  13/01/14 00:37:49 : diff /usr/lib/cgi-bin/kannel/reply-sun.pl /usr/lib/cgi-bin/kannel/reply-sun2.pl
+  509  13/01/14 00:38:28 : ll /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  510  13/01/14 00:38:48 : chmmd 775 /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  511  13/01/14 00:38:55 : chmod 775 /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  512  13/01/14 00:38:57 : ll /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  513  13/01/14 00:40:00 : ll /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  514  13/01/14 00:40:39 : vim /usr/lib/cgi-bin/kannel/reply-sun.pl
+  515  13/01/14 00:40:57 : vim /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  516  13/01/14 00:41:25 : ll
+  517  13/01/14 00:41:31 : ll /usr/lib/cgi-bin/kannel/
+  518  13/01/14 00:41:48 : rm /usr/lib/cgi-bin/kannel/reply-sun.pl 
+  519  13/01/14 00:41:54 : rm /usr/lib/cgi-bin/reply-sun.pl 
+  520  13/01/14 00:42:05 : vim /usr/lib/cgi-bin/kannel/reply-sun2.pl 
+  521  13/01/14 00:42:14 : mv /usr/lib/cgi-bin/kannel/reply-sun2.pl /usr/lib/cgi-bin/kannel/reply-sun.pl
+  522  13/01/14 00:42:31 : vim /usr/lib/cgi-bin/kannel/reply-sun.pl
+  523  13/01/14 00:02:18 : sudo vim -O /etc/kannel/kannel.conf /usr/local/include/kannel/modems.conf
+  524  13/01/14 01:11:27 : history | grep lynx
+  525  13/01/14 01:12:04 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=2292&text=balance"
+  526  13/01/14 01:14:16 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=2225&text=balance"
+  527  13/01/14 01:15:50 : history | grep 2292
+  528  13/01/14 01:16:23 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=2292&text=10 09334146548"
+  529  13/01/13 09:20:42 : screen -ls
+  530  13/01/13 15:59:51 : apt-get install tmux
+  531  13/01/13 15:59:54 : sudo apt-get install tmux
+  532  13/01/13 16:00:11 : cd git/configfiles/mba/
+  533  13/01/13 16:00:13 : git pull
+  534  13/01/13 16:01:05 : cd
+  535  13/01/13 16:01:18 : ln -s git/configfiles/mba/tmux.conf .tmux.conf
+  536  13/01/13 16:01:20 : tmux
+  537  13/01/13 16:13:06 : vim .tmux.conf 
+  538  13/01/13 16:14:13 : tmus
+  539  13/01/13 16:14:15 : tmux 
+  540  13/01/13 16:19:31 : vim .tmux.conf 
+  541  13/01/13 16:19:54 : tmux
+  542  13/01/13 16:43:36 : vim .tmux.conf 
+  543  13/01/13 16:45:11 : tmux
+  544  13/01/13 16:45:17 : vim .tmux.conf 
+  545  13/01/13 16:46:00 : tmux
+  546  13/01/13 16:46:50 : tmux -ls
+  547  13/01/13 16:46:53 : tmux ls
+  548  13/01/13 16:46:59 : tmux attch 0
+  549  13/01/13 16:47:04 : tmux attatch
+  550  13/01/13 16:47:10 : tmux attatch 0
+  551  13/01/13 16:47:34 : tmux attach 0
+  552  13/01/13 16:47:37 : tmux attach -t 0
+  553  13/01/14 10:56:52 : tail -f /var/log/syslog
+  554  13/01/14 10:57:06 : ll /dev/ttyUSB*
+  555  13/01/14 10:57:31 : sudo wvdialconf 
+  556  13/01/14 10:58:31 : sudo vim /etc/kannel/kannel.conf 
+  557  13/01/14 10:59:20 : cp /etc/kannel/* git/configfiles/ubuntu/
+  558  13/01/14 10:59:25 : ls git/configfiles/ubuntu/
+  559  13/01/14 10:59:29 : cd git/configfiles/
+  560  13/01/14 10:59:29 : ls
+  561  13/01/14 10:59:32 : git st
+  562  13/01/14 10:59:43 : git df
+  563  13/01/14 11:01:18 : exit
+  564  13/01/14 11:08:13 : ll ~/git/z/etc/profile.d/z.sh
+  565  13/01/14 11:08:30 : source ~/.bashrc 
+  566  13/01/14 11:08:37 : cd git/configfiles/
+  567  13/01/14 11:08:39 : cd ubuntu/
+  568  13/01/14 11:08:40 : cd
+  569  13/01/14 11:10:12 : cd git/
+  570  13/01/14 11:10:14 : cd configfiles/
+  571  13/01/14 11:10:16 : cd mba/
+  572  13/01/14 11:10:18 : cd ..
+  573  13/01/14 11:10:20 : cd ubuntu/
+  574  13/01/14 11:10:34 : z git
+  575  13/01/14 11:10:44 : cd
+  576  13/01/14 11:10:50 : exit
+  577  13/01/14 11:01:50 : vim .tmux.conf 
+  578  13/01/14 11:02:57 : vim .bashrc 
+  579  13/01/14 11:03:41 : vim .bashrc /home/yoyo/git/configfiles/mba/bashrc 
+  580  13/01/14 11:03:49 : vim -O .bashrc /home/yoyo/git/configfiles/mba/bashrc 
+  581  13/01/14 11:11:10 : exit
+  582  13/01/14 11:04:26 : cd git/
+  583  13/01/14 11:04:26 : ls
+  584  13/01/14 11:04:28 : git clone https://github.com/rupa/z.git
+  585  13/01/14 11:06:39 : more z/README 
+  586  13/01/14 11:07:00 : less z/README 
+  587  13/01/14 11:07:04 : more z/README 
+  588  13/01/14 11:11:14 : exit
+  589  13/01/14 11:18:24 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=201201131118"
+  590  13/01/14 11:19:17 : exit
+  591  13/01/14 10:54:32 : tmux ls
+  592  13/01/14 10:54:40 : tmux
+  593  13/01/14 10:54:46 : tmux ls
+  594  13/01/14 10:55:02 : screen -ls
+  595  13/01/14 10:55:05 : tmux ls
+  596  13/01/14 10:55:11 : tmux attach -t 0
+  597  13/01/14 11:01:21 : tmux ls
+  598  13/01/14 11:01:25 : vim .tmux.conf 
+  599  13/01/14 11:01:40 : tmux ls
+  600  13/01/14 11:01:42 : tmux
+  601  13/01/14 11:19:10 : tmux ls
+  602  13/01/14 11:19:12 : tmux attach -t 0
+  603  13/01/14 15:02:07 : cat /dev/ttyUSB1 
+  604  13/01/14 15:02:10 : sudo cat /dev/ttyUSB1 
+  605  13/01/14 15:02:17 : sudo more /dev/ttyUSB1 
+  606  13/01/14 15:02:25 : sudo less /dev/ttyUSB1 
+  607  13/01/14 15:02:29 : sudo less -f /dev/ttyUSB1 
+  608  13/01/14 15:29:39 : exit
+  609  13/01/14 14:43:12 : tmux ls
+  610  13/01/14 14:43:17 : tmux attach -t 0
+  611  13/01/14 20:25:02 : tmux ls
+  612  13/01/14 20:25:04 : tmux attach -t 0
+  613  13/01/15 01:02:07 : mysql -u yoyomysql -h candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  614  13/01/15 16:39:02 : history 
+  615  13/01/15 16:39:43 : exit
+  616  13/01/14 10:55:56 : ifocnfig
+  617  13/01/14 10:56:01 : ifconfig 
+  618  13/01/14 11:14:56 : vim /etc/kannel/kannel.conf 
+  619  13/01/14 11:14:59 : sudo vim /etc/kannel/kannel.conf 
+  620  13/01/14 11:11:18 : j /home/yoyo/git/configfiles/ubuntu/
+  621  13/01/14 11:11:19 : ls
+  622  13/01/14 11:11:24 : git st
+  623  13/01/14 11:11:27 : git diff
+  624  13/01/14 11:11:30 : cd ..
+  625  13/01/14 11:11:32 : git st
+  626  13/01/14 11:11:43 : git add mba/tmux.conf
+  627  13/01/14 11:11:47 : git commit -v
+  628  13/01/14 11:12:14 : git st
+  629  13/01/14 11:12:22 : git add ubuntu/kannel.conf ubuntu/modems.conf
+  630  13/01/14 11:12:27 : git commit -v
+  631  13/01/14 11:13:04 : sudo git push origin master
+  632  13/01/14 14:43:37 : tail -f /var/log/syslog
+  633  13/01/14 14:43:48 : ls /dev/tty*
+  634  13/01/14 14:43:52 : ls /dev/ttyUSB*
+  635  13/01/14 14:43:55 : ll /dev/ttyUSB*
+  636  13/01/14 14:47:40 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from new smart modem"
+  637  13/01/14 14:52:57 : tail -f /var/log/syslog
+  638  13/01/14 14:53:11 : ll /dev/tty+
+  639  13/01/14 14:53:13 : ll /dev/tty*
+  640  13/01/14 14:53:23 : ll /dev/ttyUSB*
+  641  13/01/14 14:53:44 : sudo wvdialconf 
+  642  13/01/14 14:54:10 : ll /dev/ttyUSB*
+  643  13/01/14 14:58:07 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from new smart modem&smsc=smart"
+  644  13/01/14 14:58:48 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=sun"
+  645  13/01/14 14:59:37 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=s"
+  646  13/01/14 15:02:43 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=sun"
+  647  13/01/14 15:03:16 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=smart"
+  648  13/01/14 21:26:49 : sudo cpan Log::Handler
+  649  13/01/14 22:38:11 : perl -e 'my @ar = (1..169); print "@ar\n";'
+  650  13/01/14 22:38:18 : perl -e 'my @ar = (1..169); print @ar;'
+  651  13/01/14 22:38:35 : perl -e 'my $str = a * 160; print @ar;'
+  652  13/01/14 22:38:40 : perl -e 'my $str = a * 160; print $str;'
+  653  13/01/14 22:39:17 : perl -e 'my $str = "a" * 160; print $str;'
+  654  13/01/14 22:39:27 : perl -e 'my $str = "a" * 160; print "$str\n";'
+  655  13/01/14 22:39:45 : perl -e 'my $str = "a" x 160; print "$str\n";'
+  656  13/01/14 22:40:07 : perl -e 'my $str = "a" x 160 . "z" . 100; print "$str\n";'
+  657  13/01/14 22:40:11 : perl -e 'my $str = "a" x 160 . "z" x 100; print "$str\n";'
+  658  13/01/14 22:40:41 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz&smsc=smart"
+  659  13/01/14 22:41:46 : perl -e 'my $str = "a" x 160 . "z" x 500; print "$str\n";'
+  660  13/01/14 22:42:07 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz&smsc=smart"
+  661  13/01/14 22:51:20 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09334146548&text=from smart&smsc=smart"
+  662  13/01/14 22:51:49 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09334146548&text=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz&smsc=smart"
+  663  13/01/14 11:15:18 : cd
+  664  13/01/14 11:15:24 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  665  13/01/14 11:15:40 : service kannel stop
+  666  13/01/14 11:15:45 : ps aux | grep kannel
+  667  13/01/14 11:16:16 : service kannel restart
+  668  13/01/14 11:16:22 : sudo service kannel restart
+  669  13/01/14 11:16:26 : ps aux | grep k
+  670  13/01/14 11:16:29 : ps aux | grep kannel
+  671  13/01/14 11:16:51 : tail /var/log/kannel/bearerbox.log
+  672  13/01/14 11:17:03 : sudo service kannel stop
+  673  13/01/14 11:17:06 : ps aux | grep kannel
+  674  13/01/14 11:17:10 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  675  13/01/14 14:45:32 : sudo wvdialconf 
+  676  13/01/14 14:45:50 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  677  13/01/14 11:15:20 : cd
+  678  13/01/14 11:17:30 : sudo -u kannel smsbox -v 0 /etc/kannel/kannel.conf
+  679  13/01/14 16:21:14 : vim -R /usr/lib/cgi-bin/kannel/reply-sun.pl 
+  680  13/01/14 16:41:14 : vim /usr/lib/cgi-bin/kannel/reply-sun.pl 
+  681  13/01/15 00:14:30 : mysql -u yoyomysql -h candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  682  13/01/15 00:24:38 : mysql -u yoyomysql --host=candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  683  13/01/15 00:34:52 : mysql -A -u yoyomysql --host=candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  684  13/01/15 01:06:47 : perl -c /usr/lib/cgi-bin/kannel/test_connect_to_db.pl
+  685  13/01/15 01:06:51 : perl  /usr/lib/cgi-bin/kannel/test_connect_to_db.pl
+  686  13/01/15 01:07:21 : perl -c /usr/lib/cgi-bin/kannel/test_connect_to_db.pl
+  687  13/01/15 01:07:22 : perl  /usr/lib/cgi-bin/kannel/test_connect_to_db.pl
+  688  13/01/15 16:31:26 : tmux ls
+  689  13/01/15 16:31:28 : tmux attach -t 0
+  690  13/01/16 16:38:52 : lsusb 
+  691  13/01/16 16:39:17 : lsmod | grep -i usb
+  692  13/01/16 16:39:34 : ls /dev/ttyUSB*
+  693  13/01/16 16:39:36 : ll /dev/ttyUSB*
+  694  13/01/16 16:43:08 : lsmod | grep -i usb
+  695  13/01/16 16:43:16 : lsusb 
+  696  13/01/16 16:45:25 : ll /dev/ttyUSB*
+  697  13/01/16 16:48:58 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  698  13/01/16 16:49:14 : sudo service kannel stop
+  699  13/01/16 16:49:22 : ps aux | grep kannel
+  700  13/01/16 16:49:24 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  701  13/01/16 16:49:46 : ll /dev/ttyUSB*
+  702  13/01/16 16:50:07 : more /etc/group
+  703  13/01/16 16:50:17 : grep dial /etc/group
+  704  13/01/16 16:50:38 : sudo useradd -G dialout kannel
+  705  13/01/16 16:50:56 : history | grep chmod
+  706  13/01/16 16:51:08 : ll /dev/ttyUSB*
+  707  13/01/16 16:51:10 : sudo chmod 664 /dev/ttyUSB*
+  708  13/01/16 16:51:11 : ll /dev/ttyUSB*
+  709  13/01/16 16:51:21 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  710  13/01/16 16:51:56 : sudo vim /etc/kannel/kannel.conf 
+  711  13/01/16 16:52:43 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  712  13/01/16 16:53:17 : sudo wvdialconf 
+  713  13/01/16 16:54:20 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  714  13/01/16 16:54:32 : sudo vim /etc/kannel/kannel.conf 
+  715  13/01/16 16:54:42 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  716  13/01/16 16:55:11 : sudo wvdialconf 
+  717  13/01/16 16:56:46 : sudo vim /etc/kannel/kannel.conf 
+  718  13/01/16 16:56:58 : sudo wvdialconf 
+  719  13/01/16 16:37:58 : tail -f /var/log/syslog
+  720  13/01/16 16:55:28 : tail -f /var/log/syslog | grep ttyUSB
+  721  13/01/16 15:20:37 : tmux ls
+  722  13/01/16 15:23:33 : vim .tmux.conf 
+  723  13/01/16 16:36:42 : sudo wvdialconf 
+  724  13/01/16 16:37:02 : lsmod | grep -i usb
+  725  13/01/16 16:37:06 : lsusb 
+  726  13/01/16 16:37:46 : tmux
+  727  13/01/16 16:59:20 : tmux ls
+  728  13/01/16 16:59:30 : sudo shutdown -r -h now
+  729  13/01/17 11:21:59 : exit
+  730  13/01/17 11:27:48 : ll /dev/ttyUSB*
+  731  13/01/17 11:31:54 : cat /dev/ttyUSB2 
+  732  13/01/17 11:31:57 : sudo cat /dev/ttyUSB2 
+  733  13/01/17 11:34:28 : ll /dev/ttyUSB*
+  734  13/01/17 15:32:30 : exit
+  735  13/01/17 11:25:01 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=smart"
+  736  13/01/17 11:25:22 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=sun"
+  737  13/01/17 11:26:39 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc="
+  738  13/01/17 11:29:24 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=smart"
+  739  13/01/17 11:32:52 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=sun"
+  740  13/01/17 12:08:37 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=smart"
+  741  13/01/17 12:15:39 : ll /dev/ttyUSB*
+  742  13/01/17 12:27:14 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from smart&smsc=smart"
+  743  13/01/17 12:38:01 : ll /dev/ttyUSB*
+  744  13/01/17 12:38:32 : crw-rw---- 1 root dialout 188, 0 Jan 17 12:26 /dev/ttyUSB0
+  745  13/01/17 12:38:32 : crw-rw---- 1 root dialout 188, 1 Jan 17 12:27 /dev/ttyUSB1
+  746  13/01/17 12:38:32 : crw-rw---- 1 root dialout 188, 2 Jan 17 12:26 /dev/ttyUSB2
+  747  13/01/17 12:38:32 : crw-rw---- 1 root dialout 188, 3 Jan 17 12:26 /dev/ttyUSB3
+  748  13/01/17 12:38:33 : crw-rw---- 1 root dialout 188, 4 Jan 17 12:26 /dev/ttyUSB4
+  749  13/01/17 12:38:33 : crw-rw---- 1 root dialout 188, 5 Jan 17 12:28 /dev/ttyUSB5
+  750  13/01/17 12:38:33 : crw-rw---- 1 root dialout 188, 6 Jan 17 12:26 /dev/ttyUSB6
+  751  13/01/17 13:03:05 : ll /dev/ttyUSB*
+  752  13/01/17 15:32:39 : sudo wvdialconf 
+  753  13/01/17 16:28:28 : exit
+  754  13/01/17 11:27:30 : sudo vim /etc/kannel/kannel.conf 
+  755  13/01/17 19:32:19 : sudo cp /etc/kannel/kannel.conf /etc/kannel/kannel.conf.mysql.bak
+  756  13/01/17 19:32:23 : sudo vim /etc/kannel/kannel.conf 
+  757  13/01/17 20:00:29 : ll
+  758  13/01/17 20:00:42 : mkdir kannel_backup
+  759  13/01/17 20:01:01 : sudo cp -r /etc/kannel/ ./kannel_backup/
+  760  13/01/17 20:01:06 : ll kannel_backup/
+  761  13/01/17 20:01:15 : ll kannel_backup/kannel/
+  762  13/01/17 20:01:36 : sudo apt-get autoremove kannel
+  763  13/01/17 20:04:02 : sudo find / -name "gateway*" -type d
+  764  13/01/17 20:27:30 : sudo find / -name "cgi-bin*" -type d
+  765  13/01/17 20:27:51 : wget http://www.kannel.org/download/1.4.3/gateway-1.4.3.tar.gz
+  766  13/01/17 20:28:21 : tar xfvz
+  767  13/01/17 20:28:24 : tar xfvz gateway-1.4.3.tar.gz 
+  768  13/01/17 20:29:03 : cd gateway-1.4.3/
+  769  13/01/17 20:29:03 : ls
+  770  13/01/17 20:30:58 : ./configure --with-mysql --prefix=/usr/local/kannel --with-mysql-dir=/var/lib/mysql
+  771  13/01/17 20:31:32 : sudo find / -name "mysql.h"
+  772  13/01/17 20:35:05 : sudo apt-cache search libmysqlclient
+  773  13/01/17 20:35:25 : sudo apt-get install libmysqlclient18
+  774  13/01/17 20:36:54 : sudo find / -name "mysql.*"
+  775  13/01/17 20:37:22 : sudo apt-get install libmysqlclient-dev
+  776  13/01/17 21:10:44 : sudo find / -name "mysql.*"
+  777  13/01/17 21:10:49 : sudo find / -name "mysqlh*"
+  778  13/01/17 21:10:53 : sudo find / -name "mysql.h"
+  779  13/01/17 21:11:04 : ./configure --with-mysql --prefix=/usr/local/kannel --with-mysql-dir=/var/lib/mysql
+  780  13/01/17 21:21:32 : make
+  781  13/01/17 21:23:26 : ls gw-config
+  782  13/01/17 21:23:29 : ll gw-config
+  783  13/01/17 21:23:38 : chmod 0755 gw-config
+  784  13/01/17 21:23:40 : ll gw-config
+  785  13/01/17 21:25:47 : make install
+  786  13/01/17 21:25:53 : sudo make install
+  787  13/01/17 21:26:07 : ps aux | grep kannel
+  788  13/01/17 21:54:44 : service kannel start
+  789  13/01/17 21:54:47 : ps aux | grep kannel
+  790  13/01/17 21:55:46 : sudo find / -name "bearerbox"
+  791  13/01/17 21:56:07 : ll /usr/local/kannel/sbin/
+  792  13/01/17 21:57:28 : make bindir=/usr/local/kannel/sbin install
+  793  13/01/17 21:57:31 : sudo make bindir=/usr/local/kannel/sbin install
+  794  13/01/17 21:57:38 : which apachectl 
+  795  13/01/17 22:03:52 : sudo vim /etc/profile
+  796  13/01/17 22:04:28 : source /etc/profile
+  797  13/01/17 22:04:34 : sudo vim /etc/profile
+  798  13/01/17 22:04:40 : source /etc/profile
+  799  13/01/17 22:04:49 : which bearerbox 
+  800  13/01/17 22:05:06 : sudo vim /etc/profile
+  801  13/01/17 22:05:23 : /usr/bin/sudo vim /etc/profile
+  802  13/01/17 22:05:33 : source /etc/profile
+  803  13/01/17 22:05:41 : sudo vim /etc/profile
+  804  13/01/17 22:05:45 : /usr/bin/sudo vim /etc/profile
+  805  13/01/17 22:06:12 : source /etc/profile
+  806  13/01/17 22:08:17 : sudo find / -name "bearerbox"
+  807  13/01/17 22:08:22 : /usr/bin/sudo find / -name "bearerbox"
+  808  13/01/17 22:08:40 : /usr/bin/sudo source /etc/profile
+  809  13/01/17 22:08:50 : /usr/bin/sudo find / -name "source"
+  810  13/01/17 22:09:33 : exit
+  811  13/01/17 12:17:26 : lsusb 
+  812  13/01/17 12:17:48 : lsmod | grep -i usb
+  813  13/01/17 12:18:08 : lsusb 
+  814  13/01/17 12:19:47 : sudo ll /proc/devices/
+  815  13/01/17 12:19:54 : sudo ls /proc/devices/
+  816  13/01/17 12:20:01 : sudo more /proc/devices
+  817  13/01/17 12:20:17 : ll /dev/ttyUSB*
+  818  13/01/17 12:21:14 : history 
+  819  13/01/17 12:21:20 : lsusb 
+  820  13/01/17 12:21:35 : ll /dev/ttyUSB*
+  821  13/01/17 12:21:57 : lsusb 
+  822  13/01/17 12:22:04 : sudo wvdialconf 
+  823  13/01/17 11:22:11 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  824  13/01/17 11:22:17 : sudo wvdialconf 
+  825  13/01/17 11:22:39 : sudo vim /etc/kannel/kannel.conf 
+  826  13/01/17 11:23:18 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  827  13/01/17 11:23:27 : sudo service kannel stop
+  828  13/01/17 11:23:29 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  829  13/01/17 12:01:25 : ll /proc/tty/driver/
+  830  13/01/17 12:01:27 : sudo ll /proc/tty/driver/
+  831  13/01/17 12:01:33 : sudo ls -l /proc/tty/driver/
+  832  13/01/17 12:01:44 : sudo ls -l /proc/tty/driver/usbserial
+  833  13/01/17 12:01:47 : sudo ls -l /proc/tty/driver/usbserial/
+  834  13/01/17 12:01:52 : sudo more /proc/tty/driver/usbserial
+  835  13/01/17 12:02:04 : sudo more /proc/tty/driver/serial
+  836  13/01/17 12:02:09 : sudo more /proc/tty/driver/usbserial
+  837  13/01/17 12:03:02 : ll /dev/ttyUSB*
+  838  13/01/17 12:03:47 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  839  13/01/17 12:05:04 : ll /dev/ttyUSB*
+  840  13/01/17 12:05:15 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  841  13/01/17 12:13:27 : ll /dev/ttyUSB*
+  842  13/01/17 12:14:15 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  843  13/01/17 12:16:42 : sudo more /proc/tty/driver/usbserial
+  844  13/01/17 12:26:28 : sudo wvdialconf 
+  845  13/01/17 12:26:57 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  846  13/01/17 19:26:18 : sudo apt-cache search kannel
+  847  13/01/17 19:30:02 : ll /var/lib/mysql/
+  848  13/01/17 19:30:04 : sudo ll /var/lib/mysql/
+  849  13/01/17 19:30:07 : sudo ls /var/lib/mysql/
+  850  13/01/17 20:03:31 : sudo apt-cache search kannel
+  851  13/01/17 21:55:00 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  852  13/01/17 21:55:15 : which bearerbox 
+  853  13/01/17 21:56:27 : sudo -u kannel /usr/local/kannel/sbin/ -v 0 /etc/kannel/kannel.conf
+  854  13/01/17 21:56:38 : sudo -u kannel /usr/local/kannel/sbin/bearerbox -v 0 /etc/kannel/kannel.conf
+  855  13/01/17 21:57:43 : which bearerbox 
+  856  13/01/17 21:57:56 : ll /usr/local/sbin/
+  857  13/01/17 21:58:41 : sudo /usr/local/sbin /usr/local/sbin_bak
+  858  13/01/17 21:58:45 : sudo mv /usr/local/sbin /usr/local/sbin_bak
+  859  13/01/17 21:58:55 : sudo mkdir /usr/local/sbin
+  860  13/01/17 21:59:08 : which bearerbox 
+  861  13/01/17 22:00:10 : echo PATH
+  862  13/01/17 22:00:12 : echo $PATH
+  863  13/01/17 22:00:36 : sudo vim /etc/profile
+  864  13/01/17 22:00:49 : grep -nr PATH /
+  865  13/01/17 22:00:53 : sudo grep -nr PATH /
+  866  13/01/17 22:00:58 : sudo grep -nr --color PATH /
+  867  13/01/17 22:01:19 : sudo grep -nr --color PATH / | grep --color /usr/local/sbin
+  868  13/01/17 22:09:46 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  869  13/01/17 22:10:04 : source ~/.bashrc 
+  870  13/01/17 22:10:13 : source /etc/profile
+  871  13/01/17 22:10:20 : source .bashrc 
+  872  13/01/17 22:10:24 : which bearerbox
+  873  13/01/17 22:10:31 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  874  13/01/17 22:10:39 : which bearerbox
+  875  13/01/17 11:23:55 : sudo -u kannel smsbox -v 0 /etc/kannel/kannel.conf
+  876  13/01/17 12:06:59 : tail -f /var/log/syslog
+  877  13/01/17 16:30:50 : ls /dev/serial/by-id/
+  878  13/01/17 16:30:54 : ll /dev/serial/by-id/
+  879  13/01/17 16:31:13 : sudo wvdialconf 
+  880  13/01/17 16:31:27 : ll /dev/serial/by-id/
+  881  13/01/17 16:31:33 : ll /dev/ttyUSB*
+  882  13/01/17 16:31:46 : ll /dev/serial/by-path/
+  883  13/01/17 16:32:21 : ll /dev/serial/by-id/
+  884  13/01/17 19:01:02 : mysql -A -u yoyomysql --host=candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  885  13/01/17 22:09:08 : which bearebox
+  886  13/01/17 22:09:12 : echo $PATH
+  887  13/01/17 22:09:26 : echo bearerbox
+  888  13/01/17 22:09:30 : which bearerbox
+  889  13/01/17 22:10:55 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  890  13/01/17 22:11:20 : cd
+  891  13/01/17 22:11:22 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  892  13/01/17 22:11:27 : bearerbox -v 0 /etc/kannel/kannel.conf
+  893  13/01/17 22:12:28 : su - kannel
+  894  13/01/17 22:12:34 : bearerbox -v 0 /etc/kannel/kannel.conf
+  895  13/01/17 22:12:40 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  896  13/01/17 22:13:16 : shutdown -r now
+  897  13/01/17 22:13:19 : sudo shutdown -r now
+  898  13/01/16 17:06:10 : ll /dev/ttyUSB*
+  899  13/01/16 17:07:38 : sudo wvdialconf 
+  900  13/01/16 17:14:49 : tail -f /var/log/syslog
+  901  13/01/16 17:25:30 : uptime
+  902  13/01/16 17:25:52 : cat /etc/lsb-release 
+  903  13/01/16 18:34:04 : mysql -A -u yoyomysql --host=candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  904  13/01/17 11:21:57 : tmux
+  905  13/01/17 11:22:02 : tmux ls
+  906  13/01/17 11:22:04 : tmux
+  907  13/01/17 22:17:21 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  908  13/01/17 22:18:37 : which bearerbox
+  909  13/01/17 22:18:50 : echo $PATH
+  910  13/01/17 22:19:15 : sudo grep -nr --color PATH / | grep --color /usr/local/sbin
+  911  13/01/17 22:20:13 : sudo grep -nr --color PATH / | grep --color perl5/bin
+  912  13/01/17 22:21:37 : source vim /etc/profile
+  913  13/01/17 22:21:52 : sudo vim /etc/profile
+  914  13/01/17 22:23:16 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  915  13/01/17 22:23:25 : source /etc/environment 
+  916  13/01/17 22:23:32 : su kannel source /etc/environment 
+  917  13/01/17 22:23:38 : sudo -u kannel bearerbox -v 0 /etc/kannel/kannel.conf
+  918  13/01/17 22:23:48 : sudo bearerbox -v 0 /etc/kannel/kannel.conf
+  919  13/01/17 22:23:55 : sudo shutdown -r now
+  920  13/01/18 00:46:15 : exit
+  921  13/01/17 22:39:43 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=sun"
+  922  13/01/17 22:42:02 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun&smsc=smart"
+  923  13/01/17 22:42:06 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=from sun"
+  924  13/01/17 22:45:02 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=+639217680637&text=from sun"
+  925  13/01/18 00:58:52 : exit
+  926  13/01/18 11:38:04 : updatedb
+  927  13/01/18 11:38:09 : sudo updatedb
+  928  13/01/18 11:38:17 : locate app.log
+  929  13/01/18 11:38:19 : exit
+  930  13/01/17 22:27:14 : sudo bearerbox -v 0 /etc/kannel/kannel.conf
+  931  13/01/17 22:27:31 : which bearerbox
+  932  13/01/17 22:27:52 : sudo useradd -G dialout yoyo
+  933  13/01/17 22:28:00 : ll /dev/ttyUSB*
+  934  13/01/17 22:28:09 : sudo bearerbox -v 0 /etc/kannel/kannel.conf
+  935  13/01/17 22:28:14 : bearerbox -v 0 /etc/kannel/kannel.conf
+  936  13/01/17 22:28:39 : tmux 
+  937  13/01/18 15:44:04 : exit
+  938  13/01/18 15:45:56 : sudo rmmod pcspkr
+  939  13/01/18 15:46:32 : sudo apt-cache search pcspkr
+  940  13/01/18 15:50:26 : sudo vim /etc/modprobe.d/blacklist.conf 
+  941  13/01/18 15:50:59 : exit
+  942  13/01/17 22:28:45 : bearerbox -v 0 /etc/kannel/kannel.conf
+  943  13/01/17 22:29:20 : su kannel source /etc/environment 
+  944  13/01/17 22:31:57 : whoami
+  945  13/01/17 22:32:00 : su kannel
+  946  13/01/17 22:32:03 : cd
+  947  13/01/17 22:32:07 : whoami 
+  948  13/01/17 22:32:16 : more /etc/profile
+  949  13/01/17 22:32:23 : su
+  950  13/01/17 22:32:44 : su- kannel
+  951  13/01/17 22:32:48 : su - kannel
+  952  13/01/17 22:32:53 : whoami 
+  953  13/01/17 22:33:19 : more /etc/group
+  954  13/01/17 22:33:27 : sudo chmod 664 /dev/ttyUSB*
+  955  13/01/17 22:33:34 : bearerbox -v 0 /etc/kannel/kannel.conf
+  956  13/01/17 22:34:05 : ll /dev/ttyUSB*
+  957  13/01/17 22:34:20 : sudo useradd -G dialout yoyo
+  958  13/01/17 22:34:38 : more /etc/group | grep dialout
+  959  13/01/17 22:35:01 : sudo service kannel start
+  960  13/01/17 22:35:14 : tail -f /var/log/kannel/bearerbox.log
+  961  13/01/17 22:36:15 : cd git/
+  962  13/01/17 22:36:16 : ll
+  963  13/01/17 22:36:50 : sudo -u kannel /usr/local/kannel/sbin/bearerbox -v 0 /etc/kannel/kannel.conf
+  964  13/01/17 22:35:24 : sudo service kannel start
+  965  13/01/17 22:37:19 : sudo vim /etc/kannel/kannel.conf
+  966  13/01/17 22:37:52 : ll /dev/ttyUSB*
+  967  13/01/17 22:40:06 : sudo -u kannel /usr/local/kannel/sbin/smsbox -v 0 /etc/kannel/kannel.conf
+  968  13/01/17 22:38:45 : mysql -A -u yoyomysql --host=candy-dev.co0hanjf3tih.ap-southeast-1.rds.amazonaws.com -p
+  969  13/01/18 00:46:38 : perl -c /usr/lib/cgi-bin//kannel/drl.pl 
+  970  13/01/18 00:47:39 : perl /usr/lib/cgi-bin//kannel/drl.pl 
+  971  13/01/18 00:48:24 : more app.log 
+  972  13/01/18 00:58:59 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text="drl test"&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A""
+  973  13/01/18 00:59:51 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=drl test&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A"
+  974  13/01/18 01:02:39 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=drl test&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A'"
+  975  13/01/18 01:13:21 : lynx -dump http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A'
+  976  13/01/18 01:13:41 : lynx -dump http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url="http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A"
+  977  13/01/18 01:13:56 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/kannel/drl.pl?phone=%p&text=%a&timestamp=%T&dlrv=%d&dlrr=%A'"
+  978  13/01/18 01:14:06 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31"
+  979  13/01/18 01:15:19 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='http%3A%2F%2Flocalhost%2Fcgi-bin%2Fkannel%2Fdrl.pl%3Fphone%3D%25p%26text%3D%25a%26timestamp%3D%25T%26dlrv%3D%25d%26dlrr%3D%25A'"
+  980  13/01/18 01:17:56 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='http://localhost/cgi-bin/'"
+  981  13/01/18 01:18:01 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='http'"
+  982  13/01/18 01:18:09 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url='h'"
+  983  13/01/18 01:18:17 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=0&dlr-url='h'"
+  984  13/01/18 01:18:27 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url=h"
+  985  13/01/18 01:24:08 : history | grep dlr-url
+  986  13/01/18 01:24:51 : lynx -dump "http://127.0.0.1:13013/cgi-bin/sendsms?username=kanneluser&password=kanneluser&to=09217680637&text=dlr test&smsc=$smsc&dlr-mask=31&dlr-url=http%3A%2F%2Flocalhost%2Fcgi-bin%2Fkannel%2Fdrl.pl%3Fphone%3D%25p%26text%3D%25a%26timestamp%3D%25T%26dlrv%3D%25d%26dlrr%3D%25A"
+  987  13/01/18 01:25:26 : more /usr/lib/cgi-bin/kannel/
+  988  13/01/18 01:25:29 : ll /usr/lib/cgi-bin/kannel/
+  989  13/01/18 01:26:38 : history 
+  990  13/01/18 01:27:26 : ll -t /usr/lib/cgi-bin/kannel/
+  991  13/01/18 11:37:18 : /usr/bin/sudo find / -name "app.log"
+  992  13/01/18 11:37:26 : sudo find / -name "app.log"
+  993  13/01/18 11:37:54 : ll /home/yoyo/app.log
+  994  13/01/18 11:37:56 : more /home/yoyo/app.log
+  995  13/01/18 15:51:24 : sudo shutdown -r now
+  996  13/01/18 15:52:38 : ls
+  997  13/01/18 15:52:41 : exit
+  998  13/01/18 15:59:19 : ps aux | grep kannel
+  999  13/01/18 15:59:24 : ps aux | grep bearer
+ 1000  13/01/18 15:59:50 : sudo vim /etc/kannel/kannel.conf
+ 1001  13/01/18 18:44:28 : :q
+ 1002  13/01/18 18:45:10 : history > git/configfiles/ubuntu/memo/history.log

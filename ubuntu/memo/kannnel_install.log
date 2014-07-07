@@ -1,0 +1,52 @@
+yoyo@ubuntu:~$ sudo apt-get install kannel
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libatk1.0-0 ttf-dejavu-core libxfixes3 python-aptdaemon.gtk3widgets gir1.2-gtk-3.0 python-software-properties libjpeg8 libpixman-1-0 gir1.2-gdkpixbuf-2.0
+  aptdaemon-data python-aptdaemon python-pycurl libcairo2 libfontconfig1 fontconfig-config policykit-1 gir1.2-atk-1.0 libgdk-pixbuf2.0-common libxcb-render0
+  hicolor-icon-theme libck-connector0 libdatrie1 python-defer fontconfig libgtk-3-common libvte-2.90-9 gir1.2-freedesktop libpango1.0-0 libgtk-3-0 libxft2
+  unattended-upgrades libxcomposite1 libvte-2.90-common dconf-service libthai0 gir1.2-pango-1.0 aptdaemon libjpeg-turbo8 libatk1.0-data im-switch libxrender1
+  libdconf0 libtiff4 libjasper1 language-selector-gnome libpam-ck-connector libthai-data libgdk-pixbuf2.0-0 libcairo-gobject2 libpolkit-backend-1-0 x11-common
+  gir1.2-vte-2.90 dconf-gsettings-backend libxdamage1 libgtk-3-bin libxi6 libxcursor1 libxcb-shm0 libxinerama1 libxrandr2 libpolkit-agent-1-0 consolekit
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  libpq5 libsqlite0
+The following NEW packages will be installed:
+  kannel libpq5 libsqlite0
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Need to get 1526 kB of archives.
+After this operation, 4123 kB of additional disk space will be used.
+Do you want to continue [Y/n]? Y
+Get:1 http://ph.archive.ubuntu.com/ubuntu/ precise-updates/main libpq5 i386 9.1.7-0ubuntu12.04 [97.7 kB]
+Get:2 http://ph.archive.ubuntu.com/ubuntu/ precise/universe libsqlite0 i386 2.8.17-7fakesync1build1 [185 kB]
+Get:3 http://ph.archive.ubuntu.com/ubuntu/ precise/universe kannel i386 1.4.3-2fakesync2build1 [1244 kB]
+Fetched 1526 kB in 1min 10s (21.6 kB/s)
+Selecting previously unselected package libpq5.
+(Reading database ... 35341 files and directories currently installed.)
+Unpacking libpq5 (from .../libpq5_9.1.7-0ubuntu12.04_i386.deb) ...
+Selecting previously unselected package libsqlite0.
+Unpacking libsqlite0 (from .../libsqlite0_2.8.17-7fakesync1build1_i386.deb) ...
+Selecting previously unselected package kannel.
+Unpacking kannel (from .../kannel_1.4.3-2fakesync2build1_i386.deb) ...
+Processing triggers for man-db ...
+Processing triggers for ureadahead ...
+ureadahead will be reprofiled on next reboot
+Setting up libpq5 (9.1.7-0ubuntu12.04) ...
+Setting up libsqlite0 (2.8.17-7fakesync1build1) ...
+Setting up kannel (1.4.3-2fakesync2build1) ...
+Warning: The home dir /usr/lib/kannel you specified can't be accessed: No such file or directory
+Adding system user `kannel' (UID 107) ...
+Adding new user `kannel' (UID 107) with group `nogroup' ...
+Not creating home directory `/usr/lib/kannel'.
+changed ownership of `/var/log/kannel' from root:root to kannel:root
+ * Starting WAP gateway
+   ...done.
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+yoyo@ubuntu:~$ mkdir /usr/lib/kannel
+mkdir: cannot create directory `/usr/lib/kannel': Permission denied
+yoyo@ubuntu:~$ sudo mkdir /usr/lib/kannel
+yoyo@ubuntu:~$ chmod 777 /usr/lib/kannel
+chmod: changing permissions of `/usr/lib/kannel': Operation not permitted
+yoyo@ubuntu:~$ sudo chmod 777 /usr/lib/kannel

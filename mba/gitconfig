@@ -1,0 +1,21 @@
+[user]
+	name = ikazoy
+	email = giboshi31@gmail.com
+[core]
+	pager = less
+	precomposeunicode = true
+	quotepath = false
+	autocrlf = input
+	editor = /usr/local/bin/vim
+[color]
+	ui = auto
+[alias]
+	logs = log -p --graph --decorate --pretty=format:\"%ad [%cn] <c:%h t:%t p:%p> %n %Cgreen%d%Creset %s %n\" --stat
+	co = checkout
+	st = status
+	ci = commit -a
+	df = diff
+	br = branch
+	wh = whatchanged
+	stat = log --stat --summary
+	logg = log --graph --decorate --pretty=format:\"%ad [%cn] %h> %n %Cgreen%d%Creset %s %n\" --name-status

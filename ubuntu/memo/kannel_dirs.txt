@@ -1,0 +1,6 @@
+/usr/local/include/kannel
+/usr/lib/kannel
+/usr/share/doc/kannel
+/var/log/kannel
+/etc/kannel
+/run/kannel

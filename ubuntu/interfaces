@@ -1,0 +1,19 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+# wireless interface
+auto eth1
+iface eth1 inet dhcp
+wpa-ssid yoyo skycable network
+wpa-ap-scan 1
+wpa-key-mgmt WPA-PSK
+wpa-psk hellonewlife
+wpa-driver wext
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
