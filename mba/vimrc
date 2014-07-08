@@ -69,6 +69,7 @@ call vundle#rc()
 " required!
 
 " My Bundles
+Bundle 'thinca/vim-localrc'
 Bundle 'scrooloose/syntastic'
 let g:syntastic_mode_map = {
       \  'mode': 'active',
