@@ -31,6 +31,7 @@ install ag || true
 install docker || true
 install boot2docker || true
 install bash-completion || true
+install ngrok || true
 # Cask Packages
 cask install iterm2 || true
 cask install evernote || true
