@@ -19,3 +19,6 @@
 	wh = whatchanged
 	stat = log --stat --summary
 	logg = log --graph --decorate --pretty=format:\"%ad [%cn] %h> %n %Cgreen%d%Creset %s %n\" --name-status
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
