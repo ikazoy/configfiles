@@ -60,3 +60,7 @@ cask install filezilla || true
 cask install seil || true
 cask install github || true
 cask install optimal-layout || true
+cask install gyazo || true
+cask install android-file-transfer || true
+cask install ngrok || true
+cask install onepassword || true
