@@ -1,6 +1,3 @@
-[user]
-	name = ikazoy
-	email = giboshi31@gmail.com
 [core]
 	pager = less
 	precomposeunicode = true
@@ -19,6 +16,11 @@
 	wh = whatchanged
 	stat = log --stat --summary
 	logg = log --graph --decorate --pretty=format:\"%ad [%cn] %h> %n %Cgreen%d%Creset %s %n\" --name-status
+	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[user]
+	name = Zak Yoshiki Ozaki
+	email = yoshiki.ozaki@yoy-holdings.com
