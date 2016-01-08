@@ -53,7 +53,6 @@ cask install bartender || true
 cask install sqwiggle || true
 cask install mou || true
 cask install coteditor || true
-cask install xtrafinder || true
 cask install caffeine || true
 cask install bettertouchtool || true
 cask install filezilla || true
