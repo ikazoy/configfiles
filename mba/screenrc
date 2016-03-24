@@ -1,4 +1,5 @@
 autodetach on
+shell -${SHELL}
 bell_msg "^G"
 defkanji utf-8
 defencoding utf-8
